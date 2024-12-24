@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="head">
+        <h3>CURRENCY CONVERTER</h3>
+    </div>
+    <div class="container">
+    <div class="amount">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount">
+    </div>
+    <div class="from">
+        <label for="fromCurrency">From:</label>
+        <select id="fromCurrency" name="fromCurrency">
+            <option value="USD">US DOLLER(USD)</option>
+            <option value="EUR">EURO(EUR)</option>
+            <option value="GBP">GREAT BRITISH POUND(GBP)</option>
+            <option value="NPR">NEPALESE RUPEE(NPR)</option>
+            <option value="IND">INDIAN RUPEE(IND)</option>
+        </select>
+    </div>
+    <div class="to">
+        <label for="toCurrency">To:</label>
+        <select id="toCurrency" name="toCurrency">
+            <option value="USD">US DOLLER(USD)</option>
+            <option value="EUR">EURO(EUR)</option>
+            <option value="GBP">GREAT BRITISH POUND(GBP)</option>
+            <option value="NPR">NEPALESE RUPEE(NPR)</option>
+            <option value="IND">INDIAN RUPEE(IND)</option>
+        </select>
+    </div>
+    <br><br>
+    <div>
+        <button onclick="convertCurrency()">Convert</button>
+    </div>
+</div>
+    <div class="result">
+        <p id="result"></p>
+    </div>
+
+   <script src="action.js"></script>
+</body>
+</html>
